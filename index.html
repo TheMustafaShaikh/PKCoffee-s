@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PK Coffee</title>
+    <link rel="stylesheet" href="/assets/styles/styles.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="/assets/images/logo.png" width="240" height="140" alt="logo">
+        <div class="burger" style="padding-right:20px;"><img onclick="showAndHide()" width="45" src="/assets/images/burger.png" alt=""></div>
+        <div class="nav-items">
+            <p>Pure Coffee</p>
+            <p>Instant Coffee</p>
+            <p>Accessories</p>
+            <a href="">Sign in</a>
+            <a href="">Join us</a>
+        </div>
+    </div>
+    <div class="nav-mobile" id="mobile">
+        <p>Pure Coffee</p>
+        <p>Instant Coffee</p>
+        <p>Accessories</p>
+    </div>
+
+    <div class="coffee">
+        <img src="/assets/images/coffe1.png" width="380" alt="coffee">
+    </div>
+    <div class="drop-brown">
+        <h1>PK's Special Coffee</h1>
+        <table class="tables">
+            <tr>
+                <td>Pure</td>
+                <td>Origin</td>
+                <td>Quality</td>
+            </tr>
+            <tr>
+                <td>100%</td>
+                <td>PAKISTAN</td>
+                <td>SCRUMPTIOUS</td>
+            </tr>
+        </table>
+    </div>
+    <div class="price">
+        <h1>15$</h1>
+
+    </div>
+
+
+
+    <div class="content">
+
+        <div class="details">
+            <h1>DELIGHTFULLY HOT</h1>
+            <p>Refresh your day with the bright, tropical flavors of
+                <br/>our PK Drink and Hot Chocolate and Mocha®</p>
+            <a class="buy" href="https://www.starbucks.com/menu">Buy Now</a>
+        </div>
+        <div>
+            <img src="/assets/images/coffee2.png" width="380" alt="coffee2">
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <form class="contact">
+                <h1>Contact Us</h1>
+                <input type="text" placeholder="Enter your name." />
+                <input type="text" placeholder="Enter your email address." />
+                <textarea placeholder="Enter your message." rows="10"></textarea>
+            </form>
+        </div>
+        <div class="hours">
+            <h1>Opening Hours</h1>
+            <p>Monday-Friday: 8am - 12am</p>
+            <p>Weekends: 10am - 2am</p>
+        </div>
+        <div class="location">
+            <iframe id="loc" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11387.980358795337!2d-72.7151686!3d44.4742734!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x36b842890216d095!2sPK%20Coffee%2C%20LLC!5e0!3m2!1sen!2s!4v1624728366593!5m2!1sen!2s" width="500"
+                height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+    </div>
+
+
+    <script>
+        function showAndHide() {
+            if (document.getElementById("mobile").classList.contains("active")) {
+                document.getElementById("mobile").style.display = "none";
+                document.getElementById("mobile").classList.remove("active");
+            } else {
+                document.getElementById("mobile").style.display = "block";
+                document.getElementById("mobile").classList.add("active");
+            }
+
+        }
+    </script>
+</body>
+
+</html>
